@@ -1,3 +1,47 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 h1{
     background-color: blue;
+    width: 40px;
+    transition: 2s all;
+    animation: rot 2s infinite;
+}
+
+
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+#enzel{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-size: 55px;
+    border-radius: 20px;
+    padding: 0 20px;
+    position: absolute;
+    transition: all 1s;
+    margin-top: 100px;
+    
+}
+#enzel:hover{
+    background-color: cadetblue;
+    color: black;
+    transform: scale(1.2);
+
+} 
+
+h1.noz{
+    background-color: red;
 }
