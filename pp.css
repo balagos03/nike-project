@@ -45,7 +45,6 @@ body{
 @keyframes ythrek {
     0%{
         transform: scale(1)rotate(-25deg);
-        ;
 
     }
     50% {
@@ -95,7 +94,7 @@ header{
     position: absolute;
     width: 100%;
     height: 20%;
-    background: rgba(0, 0, 0, 0.271);
+    background: rgba(255, 0, 0, 0.271);
 
     
 }
@@ -106,7 +105,7 @@ header{
     height: auto;
     top: 15%;
     left: 0%;
-    opacity: 0;
+    opacity: 0; /*transaprensity*/
     transition: all 2s;
 }
 #nike-seeklogo.after{
@@ -141,6 +140,7 @@ header button,input{
 }
 .options:hover{
     background-color: rgba(255, 255, 255, 0.275);
+    transform: scale(1.05);
 }
 
 
@@ -168,11 +168,14 @@ header input{
     background-color: antiquewhite;
     padding: 0 20px;
     transition: 0.5s all;
+    text-align: center;
 
 }
 
-header input:hover{
-    background-color: rgb(255, 183, 89);
+
+.box input:focus{
+    box-shadow: 0 0 30px rgb(173, 127, 66);
+    outline: none;
 }
 
 
@@ -183,3 +186,82 @@ header input:hover{
 #options.after{
     opacity: 1;
 }
+
+
+
+
+#loginbutton{
+    background-color:rgb(255, 170, 0) ;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    left: 87%;
+}
+
+#loginbutton:hover{
+    color: aliceblue;
+    background-color: black;
+}
+
+
+#menu{
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    font-size: 100%;
+    transition: 0.5s all;
+    top: 20%;
+    width: 3%;
+    height: auto;
+    left: 94%;
+    font-size: 170%;
+}
+
+#menu:hover{
+    color: bisque;
+    background-color: rgba(255, 0, 0, 0.159);
+    box-shadow: 0 0 30px black;
+}
+
+
+#search{
+    top: 50%;
+    left: 83%;
+    width: 3%;
+    height: 20%;
+    border-radius: 20px;
+    background-color: rgb(255, 170, 0);
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    transition: 0.5s all;
+
+}
+#menupaper{
+    background-color: aliceblue;
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 0;
+    height: 100%;
+    transition: 1s all;
+
+}
+
+#menupaper.show{
+    width: 20%;
+}
+
+#closemenu{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    transition: 1s all;
+}
+
+#closemenu.show{
+    display: block;
+    transition:1s all ;
+}
+
+
