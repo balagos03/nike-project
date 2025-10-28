@@ -133,7 +133,7 @@ header button,input{
     height: 20%;
     background-color: transparent;
     color: white;
-    font-size: 20px;
+    font-size: 100%;
     transition: 0.5s all;
     border-radius: 20px;
     padding: 5px 10px;
