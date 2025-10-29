@@ -1,38 +1,50 @@
 body{
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 0;
-    background-color: black;
     overflow-x: hidden;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
 }
 
 
 
-#tswirtboot{
-    background-color: rgb(255, 204, 0);
-    border-radius: 60px;
-    box-shadow: 0 0 50px rgb(255, 179, 0);
+#content{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    
+}
+header{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(76, 10, 10);
+}
+#tswira{
+    position: absolute;
+    width: 30%;
+    height: 35%;
+    background-color: rgb(187, 142, 53);
+    right: -32%;
+    top: 50%;
     transform: rotate(-25deg);
-    right:  -5%;
-    top: 45%;
+    border-radius:50px ;
     transition: 2s all;
     opacity: 0;
-    
 }
-
-
-#tswirtboot.after{
-    background-color: rgb(255, 204, 0);
-    border-radius: 60px;
-    transform: rotate(-25deg);
+#tswira.move{
     position: absolute;
-    right:  15%;
-    top: 40%;
+    width: 30%;
+    height: 35%;
+    background-color: rgb(187, 142, 53);
+    right: 20%;
+    top: 50%;
+    transform: rotate(-25deg);
+    border-radius:50px ;
+    animation: ythrek 4s infinite;
     opacity: 1;
-    animation: ythrek 4s infinite ;
-    
-    
 }
 
 @keyframes ythrek {
@@ -43,7 +55,7 @@ body{
     }
     50% {
         transform: scale(1.1)rotate(-25deg);
-        box-shadow: 0 0 200px rgb(255, 179, 0);
+        box-shadow: 0 0 100px rgb(255, 179, 0);
     }
     100%{
         transform: scale(1)rotate(-25deg);
@@ -51,21 +63,17 @@ body{
 
     }
 }
-#tswirtboot img{
-    max-width: 500px;
-    max-height: 500px;
+
+
+#tswira img{
+    position: absolute;
+    width: 90%;
+    height: auto;
+    left:10%;
+    top: -3%;
+
 }
 
-#transaprentbackgound{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    background-color: rgba(0, 0, 0, 0.278);
-    position:absolute;
-    z-index: 10;
-    top: 0;
-    left: 0;
-}
 #mininike{
     position: absolute;
     width: 15%;
@@ -84,7 +92,6 @@ body{
     top: 25%;
     left: 15%;
 }
-
 
 header{
     position: absolute;
@@ -262,6 +269,3 @@ header input{
 #closemenu:hover{
     background-color: rgba(240, 248, 255, 0.228);
 }
-
-
-

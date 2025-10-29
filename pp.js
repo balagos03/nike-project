@@ -1,11 +1,11 @@
-const pctr= document.getElementById("tswirtboot")
+const pctrshoes= document.getElementById("tswira")
 const headerpctr= document.getElementById("nike-seeklogo")
 const headerbar= document.getElementById("options")
 const input=document.getElementById("input1")
 const search=document.getElementById("search")
 
 function ejbdtswira() {
-    pctr.classList.add("after")
+    pctrshoes.classList.add("move")
     headerpctr.classList.add("after")
     headerbar.classList.add("after")
     
