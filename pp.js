@@ -36,13 +36,13 @@ const menu=document.getElementById("menupaper")
 const closemenu= document.getElementById("closemenu")
 menubutton.onclick= function () {
     menu.classList.add("show")
-    closemenu.classList.add("show")
+    
     
 }
 
 closemenu.onclick= function(){
     menu.classList.remove("show")
-    closemenu.classList.remove("show")
+   
 
 }
 
